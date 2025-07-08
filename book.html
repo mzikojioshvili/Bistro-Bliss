@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/css/reset.css" />
+    <link rel="stylesheet" href="./style/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <title>Book A Table</title>
+  </head>
+  <body>
+    <header id="mainHeader">
+      <nav class="nav1">
+        <div class="logo">
+          <a href="./index.html"
+            ><img src="./style/images/Logo.svg" alt="logo"
+          /></a>
+        </div>
+        <ul class="ul_1" id="navLinks">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./menu.html">Menu</a></li>
+          <li><a href="./book.html">Booking</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+
+        <button class="button1">Book A Table</button>
+
+        <div class="burger" id="burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
+
+    <section class="booking">
+      <form class="booking-form">
+        <div class="form-group">
+          <label>Choose a date</label>
+          <input
+            type="date"
+            name="selected_date"
+            id="calendar"
+            placeholder="choose a date"
+          />
+        </div>
+
+        <div class="form-group">
+          <label>Time</label>
+          <select id="time" name="time">
+            <option>12:00</option>
+            <option>13:00</option>
+            <option>14:00</option>
+            <option>15:00</option>
+            <option>16:00</option>
+            <option>17:00</option>
+            <option>18:00</option>
+            <option>18:30</option>
+            <option>19:00</option>
+            <option>19:30</option>
+            <option>20:00</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>First Name</label>
+          <input
+            id="firstname"
+            type="text"
+            placeholder="Enter your first name"
+          />
+        </div>
+
+        <div class="form-group">
+          <label>Last Name</label>
+          <input id="lastname" type="text" placeholder="Enter your last name" />
+        </div>
+
+        <div class="form-group">
+          <label>Enter email</label>
+          <input id="email" type="text" placeholder="Enter your email" />
+        </div>
+
+        <div class="form-group">
+          <label>Phone</label>
+          <div class="phone-wrapper">
+            <input
+              type="text"
+              id="phone"
+              class="phone-input"
+              placeholder="5XXXXXXXX"
+              maxlength="9"
+            />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Total Person</label>
+          <input id="totalPerson" type="numofcostumers" placeholder="2,3..." />
+        </div>
+
+        <div class="form-group">
+          <label>Aditional requipments(Not Optional)</label>
+          <input name="adinfo" type="text" placeholder="..." />
+        </div>
+
+        <button type="submit">Book A Table</button>
+      </form>
+    </section>
+
+    <footer>
+      <div class="footer_fulldiv">
+        <div class="footer_div1">
+          <img src="./style/images/Logo (1).svg" alt="logo2" />
+          <p>Instant reservations for your favorite meals</p>
+          <div class="social_icons">
+            <a href="https://www.facebook.com/" target="_blank"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a href="https://mail.google.com/mail/u/0/" target="_blank"
+              ><i class="fa-solid fa-envelope"></i
+            ></a>
+            <a href="https://www.instagram.com/" target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="footer_div2">
+          <h2 class="footer_h2">Pages</h2>
+          <ul>
+            <li><a href="./index.html">Home </a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./menu.html">Menu </a></li>
+            <li><a href="./contact.html">contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer_div3">
+          <h2 class="footer_h2">Follow Us On Instagram</h2>
+          <div class="footer_collage">
+            <img src="./style/images/Mask group (2).svg" alt="" />
+            <img src="./style/images/Mask group (3).svg" alt="" />
+            <img src="./style/images/Mask group (4).svg" alt="" />
+            <img src="./style/images/Mask group (1).svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./scripts.js"></script>
+  </body>
+</html>
